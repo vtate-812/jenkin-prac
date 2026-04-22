@@ -5,13 +5,13 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-                sh 'docker build -t tate2003/backend ./backend'
+                sh 'docker build -t tate2003/backend ./Backend'
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'docker build -t tate2003/frontend ./frontend'
+                sh 'docker build -t tate2003/frontend ./Frontend'
             }
         }
 
