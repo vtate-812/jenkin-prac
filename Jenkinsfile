@@ -11,14 +11,14 @@ pipeline {
 
         stage('Build Frontend') {
             steps {
-                sh 'docker build -t tate2003/frontend ./jenkin-prac/Frontend'
+                sh 'docker build -t tate2003/frontend:v5 ./jenkin-prac/Frontend'
             }
         }
 
         stage('Push Images') {
             steps {
                 sh 'docker push tate2003/backend'
-                sh 'docker push tate2003/frontend'
+                sh 'docker push tate2003/frontend:v5'
             }
         }
 
