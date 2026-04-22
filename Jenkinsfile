@@ -28,4 +28,7 @@ pipeline {
             }
         }
     }
+    environment {
+    KUBECONFIG = '/var/lib/jenkins/.kube/config'
+}
 }
