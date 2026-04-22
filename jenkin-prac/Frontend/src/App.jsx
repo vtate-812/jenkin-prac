@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState("");
 
   const calculate = async () => {
-    const res = await fetch("http://localhost:5000/calculate", {
+    const res = await fetch("http://10.101.11.159:30382/calculate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
