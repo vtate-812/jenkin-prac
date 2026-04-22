@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/vtate-812/jenkin-prac.git'
-            }
-        }
-
         stage('Build Backend') {
             steps {
                 sh 'docker build -t tate2003/backend ./backend'
